@@ -1,0 +1,211 @@
+/* Dashboard CSS */
+/* login */
+#login {
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 15px;
+  margin: auto;
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.footer-login {
+  position: fixed!important;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Toggle buttons */
+.toggleBtn {
+	position: relative;
+	display: block;
+	width: 90px;
+	height: 40px;
+	padding: 3px;
+	bottom: 5px;
+	border-radius: 30px;
+}
+.switch-input, .icons {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 12px;
+	text-transform: uppercase;
+	background: #bdc1c8;
+	border-radius: inherit;
+	cursor: pointer;
+}
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 30%;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+}
+.switch-label:before {
+	content: attr(data-off);
+	right: 9px;
+	color: #6b7381;
+}
+.switch-label:after {
+	content: attr(data-on);
+	left: 9px;
+	color: #FFFFFF;
+}
+.switch-input:checked ~ .switch-label {
+	background: #29b5a8;
+}
+.switch2-input:checked ~ .switch2-label {
+	background: #ff8300;
+}
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
+}
+.switch-handle {
+	position: absolute;
+	top: 8px;
+	left: 9px;
+	width: 29px;
+	height: 29px;
+	background: white;
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+}
+.switch-input:checked ~ .switch-handle {
+	left: 52px;
+  background-color: #29b5a8;
+	box-shadow: 0 0 1px #29b5a8;
+}
+
+.switch2-input:checked ~ .switch2-handle {
+  background-color: #ff8300;
+	box-shadow: 0 0 1px #ff8300;
+}
+
+input[type="checkbox"]:disabled + .switch-label,
+input[type="checkbox"]:disabled + .switch-handle
+{
+    filter: contrast(70%);
+	cursor: not-allowed;
+} 
+ 
+/* Transition
+========================== */
+.switch-label, .switch-handle {
+	transition: All 0.4s ease;
+	-webkit-transition: All 0.4s ease;
+	-moz-transition: All 0.4s ease;
+	-o-transition: All 0.4s ease;
+}
+
+/* Slider */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.slidecontainer {
+  margin: 20px 20px 11px;
+}
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 70%!important;
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block!important;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.slider::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+.slider:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.slider::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+.slider:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+.slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+}
+.sliderValue {
+  display: inline-block;
+  position: relative;
+  /* width: 60px; */
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+	margin-left: 8px;
+	font-size: 15px;
+}
+.sliderValue:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+input::-moz-focus-inner, input::-moz-focus-outer {
+  border: 0;
+}

@@ -1,0 +1,55 @@
+{% extends "navbar.html" %}
+{% block content %}
+<div class="content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Temperature</h4>
+            <p class="category">Realtime temperature reading</p>
+          </div>
+          <div class="content">
+            <div id="tempChart" class="ct-chart ct-major-twelfth"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Humidity</h4>
+            <p class="category">Realtime humidity reading</p>
+          </div>
+          <div class="content">
+            <div id="humChart" class="ct-chart ct-major-twelfth"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Soil Moisture Level</h4>
+            <p class="category">Realtime soil moisture level reading</p>
+          </div>
+          <div class="content">
+            <div id="soilChart" class="ct-chart ct-major-twelfth"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Light Level</h4>
+            <p class="category">Realtime light level reading</p>
+          </div>
+          <div class="content">
+            <div id="lightChart" class="ct-chart ct-major-twelfth"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock content %}

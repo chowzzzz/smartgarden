@@ -1,0 +1,84 @@
+{% extends "template.html" %}
+{% block navbar %}
+<div class="sidebar" data-background-color="white" data-active-color="warning">
+
+  <!--
+          Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+          Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+        -->
+
+  <div class="sidebar-wrapper">
+    <div class="logo">
+      <a href="#" class="simple-text">SMART GARDEN</a>
+    </div>
+
+    <ul class="nav">
+      {% if active == 'dashboard' %}
+      <li class="active">
+        {% else %}
+      <li>
+        {% endif %}
+        <a href="{{ url_for('dashboard') }}">
+          <i class="fas fa-seedling"></i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      {% if active == 'graph' %}
+      <li class="active">
+        {% else %}
+      <li>
+        {% endif %}
+        <a href="{{ url_for('graph') }}">
+          <i class="ti-pie-chart"></i>
+          <p>Graphs</p>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+<div class="main-panel">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span>
+        </button>
+        {% if active == 'dashboard' %}
+        <a class="navbar-brand" href="{{ url_for('dashboard') }}">Dashboard</a>
+        {% elif active == 'graph' %}
+        <a class="navbar-brand" href="{{ url_for('graph') }}">Graphs</a>
+        {% endif %}
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="{{ url_for('logout') }}">
+              <i class="fas fa-sign-out-alt"></i>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  {% block content %}{% endblock content %}
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="copyright pull-right">
+        IOT CA2 Project by <span class="text-info">I Owe Tea</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+{% endblock navbar %}
