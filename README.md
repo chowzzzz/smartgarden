@@ -1,7 +1,7 @@
 # smartgarden
 Smart Garden - IoT Project
 
-Hackster.io link: https://www.hackster.io/mokxf16/smart-garden-raspberry-pi-arduino-65c7b7
+Step-by-step tutorial: https://www.hackster.io/mokxf16/smart-garden-raspberry-pi-arduino-65c7b7
 
 The smart garden monitors the temperature,humidity, light levels and soil moisture of the plant. It has an automated system that waters the plant when the soil is too dry and switches on the light when it is too dark. This maintains an ideal and consistent soil condition for the plant, and makes it convenient for those who tend to forget to water their plants regularly. Also, the plant can continuously photosynthesize even when there is no sunlight.
 
