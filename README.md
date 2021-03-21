@@ -1,5 +1,6 @@
 # smartgarden :seedling:
-## Smart Garden - _Singapore Polytechnic (Diploma in Business IT) Year 3 IoT Project_
+## Internet of Things (IoT) Smart Garden
+### _Singapore Polytechnic (Diploma in Business IT) Year 3 IoT Project_
 
 Check out the detailed step-by-step tutorial [here](https://www.hackster.io/mokxf16/smart-garden-raspberry-pi-arduino-65c7b7)
 
@@ -13,10 +14,17 @@ The temperature, humidity, light levels and soil moisture values will also be pu
 
 The web page will also allow users to control the water pump and decide whether they wish to water the plants automatically or manually. They can turn on or off the water pump whenever they wish to, thus making it very convenient if users wish to water their plants even when they are not around.
 
+## Requirements :computer:
+* Python 3.0
+* Arduino
+* Raspberry Pi
+* Amazon Web Services
+* DynamoDB
+* Flask
+* Sensors (temperature, humidity, light levels and soil moisture)
+* Your plant 🌱
 
-Built using: Python 3.0, Arduino, Raspberry Pi, AWS, DynamoDB, Flask
-
-### Steps:
+## Steps 📖
 1. Set up hardware
 2. Install required packages and libraries on your Raspberry Pi
 3. Set up Amazon Web Services Account
@@ -27,7 +35,7 @@ Built using: Python 3.0, Arduino, Raspberry Pi, AWS, DynamoDB, Flask
 8. Use your smart garden! 🌱
 
 
-### Images
+## Images 📷
 Final set up:
 
 ![Final setup](https://user-images.githubusercontent.com/38778609/111861169-35bb7500-8987-11eb-99ca-5d8c80796d1d.png)
